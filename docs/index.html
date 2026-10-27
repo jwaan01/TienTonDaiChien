@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0d">
+<title>Tiên Tôn Đại Chiến</title>
+<meta name="description" content="Fan game đối kháng 2D lấy cảm hứng từ Cổ Chân Nhân — 11 tôn giả, 1P đấu máy hoặc 2P chung bàn phím.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,700;0,800;1,800;1,900&family=Be+Vietnam+Pro:wght@400;600&family=Dela+Gothic+One&display=swap&subset=vietnamese">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="cv" width="960" height="540"></canvas>
+
+  <!-- TITLE -->
+  <section id="title" class="screen">
+    <div class="half-tone"></div>
+    <div class="slab"><img id="title-art" alt=""></div>
+    <div class="title-block">
+      <span class="tag">Fan game · Cổ Chân Nhân</span>
+      <h1 class="sfx"><span>TIÊN TÔN</span><span class="b">ĐẠI CHIẾN</span></h1>
+      <p class="sub">Mười một tôn giả. Một đài chiến.</p>
+    </div>
+    <ul class="menu" id="title-menu">
+      <li data-act="cpu">1P · Đấu máy</li>
+      <li data-act="vs">2P · Đối kháng</li>
+      <li data-act="help">Hướng dẫn</li>
+    </ul>
+    <p class="hint">W/S hoặc ↑/↓ để chọn · J hoặc Enter để vào</p>
+  </section>
+
+  <!-- SELECT -->
+  <section id="select" class="screen" hidden>
+    <div class="half-tone"></div>
+    <header class="sel-head"><span class="tag">Chọn tôn giả</span><span id="sel-mode" class="mode"></span></header>
+    <div class="side p1" id="side-1">
+      <div class="art"><img alt=""></div>
+      <div class="info"><span class="who">1P</span><h2 class="nm"></h2><p class="tt"></p><p class="mv"></p></div>
+    </div>
+    <div class="side p2" id="side-2">
+      <div class="art"><img alt=""></div>
+      <div class="info"><span class="who">2P</span><h2 class="nm"></h2><p class="tt"></p><p class="mv"></p></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="diff" id="diff" hidden>
+      <span>Máy:</span><button data-d="easy">Dễ</button><button data-d="normal">Thường</button><button data-d="hard">Khó</button>
+    </div>
+    <p class="hint" id="sel-hint"></p>
+  </section>
+
+  <!-- HELP -->
+  <section id="help" class="screen" hidden>
+    <div class="half-tone"></div>
+    <div class="paper">
+      <span class="tag">Hướng dẫn</span>
+      <h2 class="hd">Điều khiển</h2>
+      <table>
+        <thead><tr><th></th><th>1P</th><th>2P</th></tr></thead>
+        <tbody>
+          <tr><td>Di chuyển</td><td>A · D</td><td>← · →</td></tr>
+          <tr><td>Nhảy</td><td>W hoặc K</td><td>↑ hoặc 2</td></tr>
+          <tr><td>Đỡ đòn</td><td>giữ S</td><td>giữ ↓</td></tr>
+          <tr><td>Đánh (bấm liên tiếp ra combo 3 đòn)</td><td>J</td><td>1</td></tr>
+          <tr><td>Lướt (xuyên qua đối thủ)</td><td>L</td><td>3</td></tr>
+          <tr><td>Chiêu đặc biệt — 1 vạch khí</td><td>U</td><td>4</td></tr>
+          <tr><td>Tuyệt chiêu — 3 vạch khí</td><td>I</td><td>5</td></tr>
+          <tr><td>Tạm dừng</td><td colspan="2">Esc hoặc P</td></tr>
+        </tbody>
+      </table>
+      <p class="rule">Phím số 1–5 dùng được ở cả hàng số lẫn bàn phím số. Khí tăng khi đánh trúng, khi bị đánh và tự hồi chậm theo thời gian. Đòn thứ ba của combo và tuyệt chiêu hất ngã đối thủ. Thắng 2 hiệp để thắng trận.</p>
+      <p class="rule">U Hồn Ma Tôn: tuyệt chiêu <b>Hóa Hồn Thú</b> biến thành hồn thể trong 15 giây, mạnh và nhanh hơn, có bộ chiêu riêng.</p>
+      <ul class="menu small" id="help-menu"><li data-act="back">Quay lại</li></ul>
+    </div>
+  </section>
+
+  <!-- PAUSE -->
+  <section id="pause" class="screen dim" hidden>
+    <ul class="menu center" id="pause-menu">
+      <li data-act="resume">Tiếp tục</li>
+      <li data-act="reselect">Chọn lại tôn giả</li>
+      <li data-act="title">Về màn hình chính</li>
+    </ul>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result" class="screen" hidden>
+    <div class="half-tone"></div>
+    <div class="slab wide"><img id="res-art" alt=""></div>
+    <div class="res-block">
+      <span class="tag" id="res-side"></span>
+      <div class="sfx win">THẮNG!</div>
+      <h2 class="hd" id="res-name"></h2>
+    </div>
+    <ul class="menu" id="result-menu">
+      <li data-act="rematch">Đấu lại</li>
+      <li data-act="reselect">Chọn lại tôn giả</li>
+      <li data-act="title">Màn hình chính</li>
+    </ul>
+  </section>
+
+  <!-- LOADING -->
+  <section id="loading" class="screen dim" hidden><div class="sfx load">ĐANG TẢI…</div></section>
+</div>
+<p id="touch-note" hidden>Trò chơi cần bàn phím. Hãy mở trên máy tính.</p>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
