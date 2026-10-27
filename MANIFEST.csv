@@ -1,0 +1,27 @@
+﻿file,width,height,target_ratio,ratio_exact,ratio_error_percent,exact_magenta_percent,near_magenta_percent,corner_rgb,sha256
+cu-duong-tien-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[207, 7, 39]",92da93face6137dcae3d9bae43977ddc65bdcc4412e6125a3a857b6deb9e69a5
+cu-duong-tien-ton_sheet.png,1536,1024,3:2,True,0.0,0.0002,61.2679,"[230, 10, 236]",09035f9f03082571d800ac5b84ac21736fdbbd92ccd044e077021b1b48919de3
+cuong-man-ma-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[211, 19, 47]",7b02f4744d4f0af46949658e0aff122648613aea644350e55cdcbe7e2000b195
+cuong-man-ma-ton_sheet.png,1536,1024,3:2,True,0.0,0.0011,62.7096,"[235, 11, 240]",c4f36f03c5e35b3ac76461d63b501d256aa1f7d36cf004bce5535e8b2c9a9257
+dao-thien-ma-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[230, 24, 54]",64b57f59ba9c816ec8da0209147eb9cd04d3707da6e1143fbfc46b01c5fe944d
+dao-thien-ma-ton_sheet.png,1536,1024,3:2,True,0.0,0.0,68.7134,"[227, 13, 231]",2dce05cc55eeea9f1346b0cfe3da258d4a37750a7f9a0a7c6ea237385d8bc561
+fx.png,1536,1024,3:2,True,0.0,0.0006,74.3765,"[237, 13, 240]",3bfa58808a988ddfc19817cb875f47fdec493c5907ba533846671dd1fceb48c4
+hong-lien-ma-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[219, 26, 49]",e1b89dc9075c684a1b507841a8a853ca7344b4b1997e3e7c4f5629a6c8feb095
+hong-lien-ma-ton_sheet.png,1536,1024,3:2,True,0.0,0.0001,62.5232,"[232, 10, 237]",93f5a30a1a6ea16e5eb384d2f3d09296bd327bb5e457180ff5a11d86a0afb7fd
+lac-tho-tien-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[210, 26, 49]",1b069c67ff9f87a085f2ff92cff5c7adaf439a8cb2aca3ff783a67a2cf47347d
+lac-tho-tien-ton_sheet.png,1536,1024,3:2,True,0.0,0.0,67.1425,"[225, 10, 234]",339112556a1a0ef512be9a7f087f31f4c647b90991679e6fa9f8626cd8d32e5b
+nguyen-lien-tien-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[208, 29, 51]",c66bdc28a4007d2d9a5ed8f3d019110cc816dcc46ef81047f52d6474538e721f
+nguyen-lien-tien-ton_sheet.png,1536,1024,3:2,True,0.0,0.0,65.317,"[232, 12, 234]",11243fa83bd21b88a4e9e4fd34d6bcbd7fa2232f8be9427dece4711c985d65e3
+nguyen-thuy-tien-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[225, 15, 47]",f25967936ce432b780ee1bcb0283f3d3bdc2d3570cb7a8dfd47c8130098a3097
+nguyen-thuy-tien-ton_sheet.png,1536,1024,3:2,True,0.0,0.0,63.5609,"[223, 12, 236]",254809ec65078bce07a3917bcef2cc7ec0d9ab2ad1493d936231da88ca1afbc3
+phuong-nguyen_cutin.png,1672,941,16:9,False,0.053135,,,"[216, 12, 40]",6d4dd57c1be670821b5bba6f47871c2d2d3c8a49c32c05be3f084e78a1ff6da9
+phuong-nguyen_sheet.png,1536,1024,3:2,True,0.0,0.0,63.773,"[230, 11, 240]",15ff4b922449b53b1cf4503a7c56fd7c4a148574f93b22aaab668939f8406faf
+stage.png,1672,941,16:9,False,0.053135,,,"[186, 24, 44]",a22ec90a28d5d47ffbea4fda8ef39d8817344ddd5aa7310eee25a221360d3186
+tinh-tu-tien-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[214, 18, 48]",084eff2df76d455c0a11c930e7e331efd7abb9c8b065c053553e804b111a86b6
+tinh-tu-tien-ton_sheet.png,1536,1024,3:2,True,0.0,0.0,65.3149,"[231, 12, 235]",7809a2b063e2ec516a2808adfd057922f34699f71a46a35279b3fc7ddb2e5903
+u-hon-ma-ton_cutin.png,1672,940,16:9,False,0.053191,,,"[218, 24, 54]",aa5b54100cfeaa2311433dcba11cfcbffc0ceb8ec7c1e19bbe9e8b72600a77e8
+u-hon-ma-ton_hon-the_cutin.png,1672,941,16:9,False,0.053135,,,"[232, 25, 56]",fa28dedb8913ccb3f43a0027fb8c3f80d3758075d8554fe82abec8919521496a
+u-hon-ma-ton_hon-the_sheet.png,1536,1024,3:2,True,0.0,0.0,57.14,"[234, 10, 228]",7c64d2891dfbaed27002b2b92769888dce39e3477dcd0542ac2215b6fe5bdaca
+u-hon-ma-ton_sheet.png,1536,1024,3:2,True,0.0,0.0,62.2424,"[231, 10, 233]",9a3674fb88f8a538a5534a8d1d8613fcb4b79b6b36e7b6ceb78e1d9a45a87077
+vo-cuc-ma-ton_cutin.png,1672,941,16:9,False,0.053135,,,"[215, 18, 49]",5415f7880fa4637dea3a9ca151c8ca543b267d9783346e9e237fdf9188ec7836
+vo-cuc-ma-ton_sheet.png,1536,1024,3:2,True,0.0,0.0001,63.069,"[233, 10, 229]",321e16e75c700a87f64a14ac1afdb017a339b510d757fdb136fbd02d94f0a393
